@@ -40,6 +40,11 @@ TDD your way through this. Ask for help! Either from the instructor or from othe
 **We are all here to learn, sharing is caring!**
 
 ## Part 2 - running the tests on Jenkins.
-Go to the Jenkins url provided by the instructor, you'll need to log in, but will be instructed as to how this is done.
+Go to the open Jenkins in your browser (let's use http://bg-dev.statoil.no:8080/).
 
-Create your own job, use your name or similar. Check out the code from your repo (or just use this one). Run the test, look around, ask for help. The Jenkins server might get a bit clogged if many people run stuff at the same time, but hey, lets try.
+Create your own job, a freestyle project, use your name or similar. Set it up to check out the relevant code (your repo, or this one). 
+
+Create a shell script in the job that run the tests. 
+See if you can set the job up to run when a change in the git repo is found.
+
+The Jenkins server might get a bit clogged if many people run stuff at the same time, but hey, lets try.
