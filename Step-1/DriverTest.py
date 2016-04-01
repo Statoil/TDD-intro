@@ -1,9 +1,8 @@
+# Task: Create tests that check a Driver object, sets and checks name, age and gender
+
 import unittest
 
-def fun(x):
-    return x + 1
-
-class MyTest2(unittest.TestCase):
-    def test(self):
-        self.assertEqual(fun(3), 4)
+class DriverTest(unittest.TestCase):
+    def test_create_driver(self):
+        driver = Driver()
 
