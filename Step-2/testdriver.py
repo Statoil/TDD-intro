@@ -16,4 +16,8 @@ class DriverTest(unittest.TestCase):
         driver.name = "Birger"
         self.assertEqual(driver.name, "Birger", "Name should equal Birger")
 
+    def test_get_name_name_not_set(self):
+        driver = Driver()
+        self.assertEqual(driver.name, None, "Name should be set to None")
+
 
