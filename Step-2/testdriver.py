@@ -20,4 +20,11 @@ class DriverTest(unittest.TestCase):
         driver = Driver()
         self.assertEqual(driver.name, None, "Name should be set to None")
 
+    def test_kill_driver_driver_dead(self):
+        driver = Driver()
+        self.assertEqual(driver.is_alive(), True, "Driver should be alive from the start")
+        driver.kill()
+        self.assertEqual(driver.is_alive(), False, "Driver should not be alive after being killed")
+
+
 

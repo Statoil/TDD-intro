@@ -18,6 +18,8 @@ We start with one file, containing one failing test. From there, we will use tes
 
 To start -> check out the code from this repository (as you are here, you might already have done that).
 
+You can sneak peak into the Step-2 and Final folder if you're a bit stuck.
+
 ### TDD Step-1, a driver.
 Go into the Step-1 folder. There, you'll find a file ```testdriver.py```. This is the start-point for creating a driver class, using TDD. The driver is supposed to represent some features that a driver of a car has. If you manage to keep up, you never need to leave this folder.
 
