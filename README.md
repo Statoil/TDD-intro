@@ -14,7 +14,7 @@ The purpose is to learn some basic python (classes and functions), to learn how 
 
 We start with one file, containing one failing test. From there, we will use test driven development to create these two classes:
 1. Driver (with a name, a function "kill()", and a function "is_alive()").
-2. Car (with a model name, registration number, and functions crash() (that might kill the driver)).
+2. Car (with a model name, and functions crash() (that might kill the driver)).
 
 To start -> check out the code from this repository (as you are here, you might already have done that).
 
@@ -29,14 +29,14 @@ This is when you should create your Driver class, in a separate file called ```d
 
 When you have your Driver class, the first test should pass.
 
-The next step is to add a couple of "features", by first adding a test for the feature, and then implementing it. It is not really important exactly what you do, but for example a way to set the name in a constructor (using ```__init__```), and a way to set / get the name as a property is a sensible first step.
+The next step is to add a couple of "features", by first adding a test for the feature, and then implementing it. It is not really important exactly what you do, but for example a way to set the name in a constructor (using ```__init__```), and a way to set / get the name as an attribute might be a sensible first step.
 
 Then, add a test for the function "is_alive()" and the function "kill()".
 
 ### TDD Step-2, a car.
 Either continue from the previous step, or go into the Step-2 folder.
 
-Now, we'll make a Car. Create a test file first (testcar.py), and TDD you'r way to a Car with a model name, a registration number and a crash() function. The model name and registration number are simple properties, but the "crash()" function might have some other implications (hint: what might happen to the driver? Does the same thing always happen?).
+Now, we'll make a Car. Create a test file first (testcar.py), and TDD you'r way to a Car with a model name and a crash() function. The model name is a simple attribute, but the "crash()" function might have some other implications (hint: what might happen to the driver? Does the same thing always happen?).
 
 Remember, each step of the way, you first write your failing test, and then in small increments write the functionality in question.
 

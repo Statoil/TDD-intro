@@ -2,7 +2,7 @@
 
 import unittest
 
-class CarTest(unittest.TestCase):
+class TestCar(unittest.TestCase):
     def test_create_car(self):
         car = Car()
 

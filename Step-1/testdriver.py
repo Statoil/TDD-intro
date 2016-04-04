@@ -2,7 +2,7 @@
 
 import unittest
 
-class DriverTest(unittest.TestCase):
+class TestDriver(unittest.TestCase):
     def test_create_driver(self):
         driver = Driver()
 
