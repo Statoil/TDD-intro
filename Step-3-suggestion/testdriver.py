@@ -2,6 +2,7 @@
 import unittest
 from driver import Driver
 
+
 class TestDriver(unittest.TestCase):
     def test_create_driver(self):
         driver = Driver()
@@ -22,9 +23,9 @@ class TestDriver(unittest.TestCase):
 
     def test_kill_driver_driver_dead(self):
         driver = Driver()
-        self.assertEqual(driver.is_alive(), True, "Driver should be alive from the start")
+        self.assertTrue(driver.is_alive(), "Driver should be alive from the start")
         driver.kill()
-        self.assertEqual(driver.is_alive(), False, "Driver should not be alive after being killed")
+        self.assertFalse(driver.is_alive(), "Driver should not be alive after being killed")
 
 
 
