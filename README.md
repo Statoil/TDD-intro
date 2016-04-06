@@ -24,7 +24,7 @@ You can sneak peak into the Step-X-suggestion folders to get some hints as to ho
 
 **We are all here to learn, sharing is caring!**
 
-### TDD Step-1, a car.
+### TDD Step 1, a car.
 
 Now, we'll make a Car. In the Step-1 folder, you'll find a file (testcar.py).
 
@@ -40,7 +40,7 @@ Now - TDD you'r way to a Car:
 Remember, each step of the way, you first write your failing test, and then
 in small increments write the functionality in question.
 
-### TDD Step -2, expand the car with some driver info.
+### TDD Step  2, expand the car with some driver info.
 The car class now has a model name and a crash() function.
 
 Add a couple of features to your Car, that keeps track of the driver:
@@ -48,15 +48,22 @@ Add a couple of features to your Car, that keeps track of the driver:
 * When the car's crash() function is called, the driver should either survive, or not. Expand the crash() to capture this (eg. car.is_driver_alive()).
 
 
-### TDD Step - 3, refactor the driver properties to a driver class
+### TDD Step - 3, refactor the driver properties to a driver class ++
 
-This is when you should create your Driver class, in a separate file called ```driver.py```.
+This is when you should create your TestDriver class, in a separate file called ```testdriver.py```.
+Start moving the driver related stuff (name, is_alive) to a new  ```driver.py``` file.
 
-When you have your Driver class, the first test should pass.
+This is refactoring. Take small (by the book), or bigger steps.
 
-The next step is to add a couple of "features", by first adding a test for the feature, and then implementing it. It is not really important exactly what you do, but for example a way to set the name in a constructor (using ```__init__```), and a way to set / get the name as an attribute might be a sensible first step.
+Write tests for the new driver class, while changing/adding/updating the tests for the Car class.
 
-Then, add a test for the function "is_alive()" and the function "kill()".
+If time permits you can for example:
+* Make the tests for the crash() function check that if the car model is Volvo, the driver survives.
+* Make the tests for the crash() function demand that if the driver is Superman, the driver should survive.
+* Move the repetitive ```car = Car("Name of car")``` into a setUp() function (```def setUp(self):```)
+
+You now have a number of tests, hopefully all running OK, and two classes (Car and Driver). Next step is to run this on
+a "continuous integration" server (Jenkins).
 
 ## Part 2 - running the tests on Jenkins.
 Go to the open Jenkins in your browser (let's use http://bg-dev.statoil.no:8080/).
