@@ -28,7 +28,7 @@ You can sneak peak into the Step-X-suggestion folders to get some hints as to ho
 
 Now, we'll make a Car. In the Step-1 folder, you'll find a file (testcar.py).
 
-Try to run the test either from your IDE, or from the command line by writing ```python -m unittests```.
+Try to run the test either from your IDE, or from the command line by writing ```python -m unittests``` (or in Python 2.7 ```python -m unittests discover```).
 
 The unit test runner will pick up files that start with test. If everything works, you'll get an error message stating ```NameError: name 'Driver' is not defined```
 
