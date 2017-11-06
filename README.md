@@ -66,7 +66,7 @@ You now have a number of tests, hopefully all running OK, and two classes (Car a
 a "continuous integration" server (Jenkins).
 
 ## Part 2 - running the tests on Jenkins.
-Go to the open Jenkins in your browser (let's use http://bg-dev.statoil.no:8080/).
+Go to a Jenkins instance in your browser (ask some developer friends for help if you don't know where it is).
 
 Create your own job, a freestyle project, use your name or similar. Set it up to check out the relevant code (your repo, or this one). 
 
