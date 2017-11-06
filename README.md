@@ -7,7 +7,7 @@ The purpose is to learn some basic python (classes and functions), to learn how 
 * A suitable editor for code (sublime, notepad(!), emacs, vim, VS Code) or a IDE suited for Python (PyCharm community edition is recommended)
 * Machine with Git installed
 * An internet connection.
-* Ability to clone this repo via SSH or https (github.com/flikka/TDD-course)
+* Ability to clone this repo via SSH or https (github.com/Statoil/TDD-intro)
 * (optional) PyCharm community edition.
 
 ## Part 1 - capture some information about a car
